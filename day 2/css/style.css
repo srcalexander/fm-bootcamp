@@ -52,9 +52,74 @@ a.harvard:hover {
    color: magenta;
 }
 
-a:active {
-}
-
 p:hover {
    background-color: lightblue;
+}
+
+div.background.blue p:hover {
+   background-color: black;
+}
+
+.outline {
+   margin: 1rem;
+   padding: 1rem;
+}
+
+.red-outline {
+   border: 3px solid red;
+}
+
+.blue-outline {
+   border: 3px solid blue;
+}
+
+.pink-outline {
+   border: 3px solid pink;
+}
+
+.green-outline {
+   border: 3px solid green;
+}
+
+.magenta-outline {
+   border: 3px solid magenta;
+}
+
+div.background {
+   height: 200px;
+   border: 2px solid black;
+   position: relative;
+   width: 50%;
+}
+
+div.background.coral {
+   background-color: coral;
+   z-index: 1;
+}
+
+div.background.blue {
+   background-color: blue;
+   margin-top: -100px;
+}
+
+div.background.blue p {
+   color: white;
+   position: absolute;
+   bottom: 0;
+}
+
+.background.coral p {
+   margin: 0;
+}
+
+a,
+em,
+strong {
+   border: 2px solid black;
+}
+.div-container {
+   display: flex;
+   flex-direction: column;
+   border: 2px solid black;
+   align-items: center;
 }
