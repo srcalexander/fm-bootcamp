@@ -123,3 +123,40 @@ strong {
    border: 2px solid black;
    align-items: center;
 }
+nav {
+   margin: 0;
+   padding: 0;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+}
+
+nav li {
+   border: 4px solid maroon;
+   padding: 0;
+   margin: 0;
+   background-color: red;
+   min-width: 200px;
+}
+
+nav a {
+   border: 2px dotted white;
+   color: white;
+   font-weight: bold;
+   font-size: 1.5rem;
+   display: block;
+   padding: 0.5rem;
+}
+
+nav a:hover {
+   color: red;
+   background-color: white;
+   text-decoration: none;
+}
