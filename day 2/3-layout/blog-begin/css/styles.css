@@ -1,0 +1,103 @@
+html {
+   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+
+.back-button {
+   border-bottom: 1px solid black;
+}
+.back-button a {
+   color: black;
+}
+.back-button button {
+   margin-bottom: 0.3rem;
+}
+
+body {
+   font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Kavivanar", cursive;
+   font-weight: normal;
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.rightheader {
+   display: flex;
+   flex-direction: column;
+   border: 1px dotted black;
+}
+
+h1 {
+   color: #da0090;
+}
+
+h2 {
+   font-size: 2rem;
+   color: #a51f10;
+   margin: 0;
+}
+nav {
+   padding: 0;
+}
+nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+   border-bottom: 1px solid #a51f10;
+   border-top: 1px solid #da0090;
+   padding: 0.36rem;
+   margin-top: 0;
+}
+
+nav a {
+   color: #624530;
+   font-size: 0.8rem;
+}
+
+a {
+   color: #da0090;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: underline;
+}
+.posted {
+   font-size: 0.8rem;
+   color: #89a611;
+}
+footer {
+   text-align: center;
+   font-size: 0.8rem;
+}
+
+article {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+}
+
+.article-img img {
+   border-radius: 20px;
+}
+
+section.articles {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
