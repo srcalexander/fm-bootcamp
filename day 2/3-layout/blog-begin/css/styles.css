@@ -30,16 +30,34 @@ h6 {
    font-weight: normal;
 }
 
+h2 {
+   font-size: 2rem;
+}
+
+.wrapper {
+   width: 90%;
+   margin: 0 auto;
+}
+
 header {
    display: flex;
    flex-direction: row;
    justify-content: center;
+   flex-wrap: nowrap;
+   gap: 1rem;
+   align-items: center;
 }
 
 .rightheader {
    display: flex;
    flex-direction: column;
    border: 1px dotted black;
+   justify-content: center;
+}
+
+.rightheader h1,
+.rightheader p {
+   margin: 0;
 }
 
 h1 {
@@ -100,4 +118,26 @@ section.articles {
    display: flex;
    flex-direction: column;
    gap: 2rem;
+   border-bottom: 1px solid #da0090;
+   margin: 0 0 0.3rem 0;
+}
+
+footer {
+   display: flex;
+   flex-direction: column;
+   border-top: 1px solid #a61f11;
+}
+
+footer ul {
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   gap: 0.2rem;
+}
+
+footer p {
+   font-size: 0.7rem;
 }
