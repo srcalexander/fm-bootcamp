@@ -51,7 +51,6 @@ header {
 .rightheader {
    display: flex;
    flex-direction: column;
-   border: 1px dotted black;
    justify-content: center;
 }
 
@@ -71,21 +70,42 @@ h2 {
 }
 nav {
    padding: 0;
+   border-bottom: 1px solid #a51f10;
+   border-top: 1px solid #da0090;
 }
+
 nav ul {
+   margin: 0;
+   padding: 0;
+}
+/*
    list-style-type: none;
    display: flex;
    justify-content: center;
    gap: 1.5rem;
-   border-bottom: 1px solid #a51f10;
-   border-top: 1px solid #da0090;
    padding: 0.36rem;
    margin-top: 0;
 }
-
+*/
 nav a {
    color: #624530;
    font-size: 0.8rem;
+   display: block;
+   padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+   text-decoration: none;
+}
+
+nav ul {
+   list-style-type: none;
+   text-align: center;
+}
+
+nav li {
+   display: inline-block;
+   text-decoration: none;
 }
 
 a {
@@ -108,6 +128,7 @@ article {
    display: flex;
    flex-direction: row;
    gap: 1rem;
+   margin: 2rem 0;
 }
 
 .article-img img {
@@ -117,7 +138,6 @@ article {
 section.articles {
    display: flex;
    flex-direction: column;
-   gap: 2rem;
    border-bottom: 1px solid #da0090;
    margin: 0 0 0.3rem 0;
 }
