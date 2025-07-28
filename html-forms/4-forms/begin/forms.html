@@ -11,31 +11,40 @@
             <h1>Alien Abduction Order Form</h1>
             <p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
             <form>
-               <h2>Your contact information</h2>
-               <label>Name: <input type="text" id="name" name="name" /></label>
-               <!-- Name tag is for the script, ID is for associating input with label if using the 'for' attribute and non- nested input label -->
-               <p>Phone number</p>
-               <p>Email</p>
+               <fieldset>
+                  <legend>Your contact information</legend>
+                  <label>Name: <input type="text" id="name" name="name" /></label>
+                  <!-- Name tag is for the script, ID is for associating input with label if using the 'for' attribute and non- nested input label. 'For' attribute not needed as input is nested inside label -->
+                  <label for="phone">Phone number:</label>
+                  <input type="tel" id="phone" name="phone" />
+                  <!-- This method doesn't nest the input inside the label and requires the label to have a 'for' attribute to associate with the id of the input -->
+                  <label for="email">Email: </label>
+                  <input id="email" name="email" type="email" />
+               </fieldset>
+               <fieldset>
+                  <legend>About your abduction</legend>
+                  <label for="date">Requested date</label>
+                  <input id="date" name="date" type="date" />
 
-               <h2>About your abduction</h2>
-               <p>Requested date</p>
-               <p>How many people would you like abducted?</p>
-               <p>What type of UFO do you prefer?</p>
-               <ul>
-                  <li>Classic oval UFO</li>
-                  <li>Star Wars-style Imperial cruiser</li>
-                  <li>Battlestar Galactica-style Viper</li>
-                  <li>Borg-style cube</li>
-               </ul>
-               <p>What type of abduction experience do you want?</p>
-               <ul>
-                  <li>Tour of the solar system</li>
-                  <li>Alien dinner and discussion</li>
-                  <li>Alien dance lessons</li>
-                  <li>Whale watching</li>
-               </ul>
-               <p>Special requests:</p>
-               <p>Add me to your email list</p>
+                  <label for="count">How many people would you like abducted?</label>
+                  <input id="count" name="count" type="number" min="1" max="10" />
+
+                  <p>What type of UFO do you prefer?</p>
+                  <label><input type="radio" name="ufotype" value="Classic oval" /> Classic oval UFO</label>
+                  <label><input type="radio" name="ufotype" value="Star Wars" /> Star Wars-style Imperial cruiser</label>
+                  <label><input type="radio" name="ufotype" value="Battlestar Galactica" /> Battlestar Galactica-style Viper</label>
+                  <label><input type="radio" name="ufotype" value="Borg" /> Borg-style cube</label>
+
+                  <p>What type of abduction experience do you want?</p>
+                  <ul>
+                     <li>Tour of the solar system</li>
+                     <li>Alien dinner and discussion</li>
+                     <li>Alien dance lessons</li>
+                     <li>Whale watching</li>
+                  </ul>
+                  <p>Special requests:</p>
+                  <p>Add me to your email list</p>
+               </fieldset>
             </form>
          </section>
          <aside>
