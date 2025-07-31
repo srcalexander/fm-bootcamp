@@ -14,7 +14,7 @@
       </header>
       <div>
          <h1>Customer Survey</h1>
-         <form>
+         <form action="https://hook.eu2.make.com/XYZ" method="post">
             <fieldset>
                <legend>Your Details</legend>
                <div class="form-q">
@@ -25,7 +25,63 @@
                   <label for="last-name">Last Name:</label>
                   <input type="text" id="last-name" name="last-name" minlength="3" maxlength="20" placeholder="Dover" />
                </div>
+               <div class="form-q">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="bendover@gmail.com" />
+               </div>
+               <div class="form-q">
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone" placeholder="12345678901" />
+               </div>
+               <div class="form-q">
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" id="dob" name="dob" />
+               </div>
             </fieldset>
+            <fieldset>
+               <legend>Your Experience</legend>
+               <div class="form-q, radio">
+                  <p>Where did you hear about us?</p>
+                  <input type="radio" id="facebook" name="where-heard" value="facebook" />
+                  <label for="facebook">Facebook</label>
+                  <input type="radio" id="instagram" name="where-heard" value="instagram" />
+                  <label for="instagram">Instagram</label>
+                  <input type="radio" id="twitter" name="where-heard" value="twitter" />
+                  <label for="twitter">Twitter</label>
+                  <input type="radio" id="reddit" name="where-heard" value="reddit" />
+                  <label for="reddit">Reddit</label>
+                  <input type="radio" id="recommendation" name="where-heard" value="recommendation" />
+                  <label for="recommendation">Recommendation</label>
+                  <input type="radio" id="other" name="where-heard" value="other" />
+                  <label for="other">Other</label>
+               </div>
+               <div class="form-q">
+                  <label for="items">How many items did you purchase?</label>
+                  <select id="items" name="items">
+                     <option selected>Select</option>
+                     <option value="1-5">1-5</option>
+                     <option value="6-10">6-10</option>
+                     <option value="11-20">11-20</option>
+                     <option value=">20">> 20</option>
+                  </select>
+               </div>
+               <div class="form-q, checkbox">
+                  <p>What did you like about your shopping experience?</p>
+                  <input type="checkbox" id="ease-of-use" name="experience" value="ease-of-use" />
+                  <label for="ease-of-use">Ease of Use</label>
+                  <input type="checkbox" id="customer-support" name="experience" value="customer-support" />
+                  <label for="customer-support">Customer Support</label>
+                  <input type="checkbox" id="value" name="experience" value="value" />
+                  <label for="value">Value for Money</label>
+                  <input type="checkbox" id="variety" name="experience" value="variety" />
+                  <label for="variety">Good Variety</label>
+               </div>
+               <div class="form-q">
+                  <label for="comments">Please tell us any comments you may have about our service</label>
+                  <textarea id="comments" name="comments" placeholder="Type here"></textarea>
+               </div>
+            </fieldset>
+            <button type="submit">Submit</button>
          </form>
       </div>
    </body>
