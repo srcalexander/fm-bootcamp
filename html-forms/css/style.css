@@ -1,6 +1,15 @@
+body {
+   background-color: #e7ecef;
+}
+
 .back-button {
    border-bottom: 1px solid black;
-   padding-bottom: 1rem;
+   padding-bottom: 0.5rem;
+}
+
+header {
+   padding: 0;
+   margin: 0;
 }
 
 .form-q {
@@ -9,7 +18,7 @@
 
 label {
    display: inline-block;
-   min-width: 6rem;
+   min-width: 7rem;
 }
 
 .radio label,
@@ -18,14 +27,47 @@ label {
    width: auto;
 }
 
+.wrapper {
+   width: clamp(200px, 70vw, 1000px);
+   margin: 1rem auto;
+   background-color: #a3cef1;
+   padding: 1rem;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+.wrapper h1 {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 2rem;
+}
+
 form {
    display: flex;
    flex-flow: column nowrap;
    gap: 1rem;
+   width: 100%;
+}
+
+fieldset {
+   border: 1px solid black;
+   border-radius: 5px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+legend {
+   font-size: 1.5rem;
 }
 
 button[type="submit"] {
    width: 10rem;
+   height: 2rem;
+   background-color: #ee4266;
+   color: white;
+}
+
+button[type="submit"]:hover {
+   background-color: white;
+   color: #ee4266;
 }
 
 textarea {
