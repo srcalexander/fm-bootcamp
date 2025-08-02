@@ -1,0 +1,18 @@
+.back-button {
+   border-bottom: 1px solid black;
+   padding-bottom: 0.5rem;
+}
+
+.shizuru-regular {
+   font-family: "Shizuru", system-ui;
+   font-weight: 400;
+   font-style: normal;
+}
+
+h2 {
+   font-family: "Shizuru", system-ui;
+}
+
+iframe {
+   border: 1px solid black;
+}
