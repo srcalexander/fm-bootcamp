@@ -1,0 +1,67 @@
+html {
+   box-sizing: border-box;
+}
+
+.back-button {
+   border-bottom: 1px solid black;
+   padding-bottom: 0.5rem;
+}
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+/*body {
+    padding: 0;
+   margin: 0; 
+}*/
+
+.wrapper {
+   width: 400px;
+   margin-top: 5px;
+   border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   height: 30rem;
+}
+
+.display {
+   display: flex;
+   flex-basis: 20%;
+   padding-right: 5px;
+   font-size: 3rem;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.keypad {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   flex-basis: 80%;
+}
+
+.wrapper button {
+   font-size: 1.6rem;
+   border: 0.5px solid black;
+}
+
+button.clear {
+   grid-column: span 2;
+}
+
+button.operator {
+   background-color: darkorange;
+}
+
+button.zero {
+   grid-column: span 3;
+}
+
+.operator:hover {
+   background-color: #dfb07b;
+   color: black;
+}
+
+button:not(.operator):hover {
+   background-color: lightgray;
+}
