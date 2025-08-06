@@ -1,12 +1,25 @@
-let age = 20;
+let age;
+let message;
 
-function double(age) {
-   age = age * 2;
-   return age;
+function double(x) {
+   age = x * 2;
+
+   if (age > 100) {
+      message = " is older than 100!";
+      return age;
+   }
+
+   if (age === 100) {
+      message = " is really old!";
+      return age;
+   } else {
+      message = " is less than 100";
+      return age;
+   }
 }
 
-age = double(age);
-console.log(age);
+double(60);
+console.log(age + message);
 
 const firstName = "Will";
 const lastName = "Jones";

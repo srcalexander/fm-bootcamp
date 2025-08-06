@@ -1,20 +1,20 @@
 function sum(x, y) {
-   console.log(x + y);
+   console.log(`The answer is ` + (x + y));
    return x + y;
 }
 
 function divide(x, y) {
-   console.log(x / y);
+   console.log(`The answer is ` + x / y);
    return x / y;
 }
 
 function multiply(x, y) {
-   console.log(x * y);
+   console.log(`The answer is ` + x * y);
    return x * y;
 }
 
 function subtract(x, y) {
-   console.log(x - y);
+   console.log(`The answer is ` + (x - y));
    return x - y;
 }
 
