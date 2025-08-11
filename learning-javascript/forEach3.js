@@ -13,3 +13,33 @@ function sum(numbers) {
 
 let total = sum(numbers);
 console.log(total);
+
+let fruits = ["apple", "banana", "orange", "pear"];
+
+function countFruits(fruits) {
+   counter = 0;
+   fruits.forEach(function (fruit) {
+      counter += 1;
+   });
+   return counter;
+}
+
+console.log(counter);
+
+function loudFruits(fruits) {
+   return fruits.map(function (fruit) {
+      fruit = fruit.toUpperCase();
+      return fruit;
+   });
+}
+
+let lFruits = loudFruits(fruits);
+console.log(lFruits);
+
+function toList(lFruits) {
+   lFruits = lFruits.join("   ");
+   return lFruits;
+}
+
+lFruits = toList(lFruits);
+console.log(lFruits);
