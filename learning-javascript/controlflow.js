@@ -17,3 +17,5 @@ for (let i = 0; i < 20; i++) {
    counter++;
    console.log(counter);
 }
+
+//Continued watching fm bootcamp - javascript with Brian Holt
